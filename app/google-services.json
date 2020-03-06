@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "121431941119",
+    "firebase_url": "https://bbpeople-dfafa.firebaseio.com",
+    "project_id": "bbpeople-dfafa",
+    "storage_bucket": "bbpeople-dfafa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121431941119:android:9d93b2b955d60059e8d1ca",
+        "android_client_info": {
+          "package_name": "com.bigBlue.people"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121431941119-vli45qomi2drhqbh20lj5fu01mdd641v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bigBlue.people",
+            "certificate_hash": "0b202299201040bb5acc1e720df78d3f13f2226d"
+          }
+        },
+        {
+          "client_id": "121431941119-8hmka0q8gm0s1ppmeu9sobfim0ca3glq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxX08HBdewpibNOxFVUF86nPCJRKFGg7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121431941119-8hmka0q8gm0s1ppmeu9sobfim0ca3glq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

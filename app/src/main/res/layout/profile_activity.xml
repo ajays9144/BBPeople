@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_action_container">
+
+            <LinearLayout
+                android:id="@+id/profile_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium_large">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mProfileImage"
+                    android:layout_width="@dimen/profile_image_size"
+                    android:layout_height="@dimen/profile_image_size"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:src="@drawable/ic_account" />
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:padding="@dimen/padding_medium"
+                    android:text="@string/txt_sign_in"
+                    android:textAppearance="@style/TextView.Title"
+                    android:textSize="@dimen/ts_large" />
+
+                <EditText
+                    android:id="@+id/edt_about"
+                    style="@style/EditText.Border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_medium_large"
+                    android:gravity="start"
+                    android:hint="@string/hint_about"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:minHeight="@dimen/edit_size"
+                    android:padding="@dimen/padding_medium"
+                    android:textSize="@dimen/ts_medium_large" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottom_action_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLogoutUser"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:text="@string/txt_logout" />
+
+                <Button
+                    android:id="@+id/btnNavigationNext"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:text="@string/txt_navigation" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                style="@style/Button"
+                android:layout_margin="@dimen/margin_medium"
+                android:text="@string/txt_update" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BBPeople</string>
+
+    <!--Sign Up-->
+    <string name="title_sign_up">Sign Up</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_password">Password</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_sign_in">Sign In</string>
+    <string name="msg_enter_name">Enter Name</string>
+    <string name="msg_enter_valid_name">Enter Valid Name</string>
+    <string name="msg_enter_email">Enter Email</string>
+    <string name="msg_enter_valid_email">Enter Valid Email</string>
+    <string name="msg_enter_phone">Enter Phone Number</string>
+    <string name="msg_enter_password">Enter Password</string>
+
+    <!--Login-->
+    <string name="title_login">Login</string>
+
+    <!--Profile-->
+    <string name="title_profile">Profile</string>
+    <string name="hint_about">About</string>
+    <string name="txt_update">Update Profile</string>
+    <string name="txt_navigation">To Next</string>
+    <string name="txt_logout">Logout</string>
+    <string name="failed_to_upload_file">Failed to upload file</string>
+    <string name="error_in_updating">Error In updating</string>
+    <string name="profile_updating_successfully">Profile Updated successfully</string>
+    <string name="msg_profile_image_updated">Profile image updated successfully</string>
+    <string name="msg_about_can_not_contain_number">About Can not contain phone number</string>
+    <string name="msg_enter_about">Enter about</string>
+    <string name="msg_about_can_not_contain_email">About Can not contain email</string>
+
+    <!--Last-->
+    <string name="title_last">Last</string>
+    <string name="tab_txt_comment">Comments</string>
+    <string name="tab_txt_comment_post">Comments And Post</string>
+    <string name="tab_txt_posts">Posts</string>
+
+</resources>

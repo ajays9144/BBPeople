@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium_large">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="@string/title_login"
+        android:textAppearance="@style/TextView.Title"
+        android:textSize="@dimen/ts_large_xx" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium_large">
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/EditText"
+            android:layout_margin="@dimen/margin_medium"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            style="@style/EditText"
+            android:layout_margin="@dimen/margin_medium"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignInNavigate"
+        style="@style/Button"
+        android:layout_margin="@dimen/margin_large"
+        android:text="@string/txt_sign_in" />
+
+    <TextView
+        android:id="@+id/btnSignUpNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/txt_sign_up"
+        android:textAppearance="@style/TextView.Title"
+        android:textSize="@dimen/ts_large" />
+
+</LinearLayout>
